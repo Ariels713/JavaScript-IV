@@ -59,6 +59,9 @@ class Student extends Person{
     sprintChallenge(subject){
         console.log(`${this.name} has begun a sprint challenge on ${subject}`)
     }
+    grade(min = 70, max = 100){
+        console.log(`${this.name} grade is a ${Math.floor(Math.random()*(max-min+1)+min) }`)
+      }
 }
 
 class ProjectManager extends Instructor{
@@ -157,6 +160,7 @@ console.log(laurenInstructor.grade(laurenPerson, `Algebra`))
 console.log(ellieStudent.listsSubjects())
 console.log(ellieStudent.PRAassignment('Python'))
 console.log(ellieStudent.sprintChallenge(`Python`))
+console.log(ellieStudent.grade())
 console.log(laurenStudent.listsSubjects())
 console.log(laurenStudent.PRAassignment('Python'))
 console.log(laurenStudent.sprintChallenge(`Python`))
@@ -167,7 +171,7 @@ console.log(laurenPM.debugsCode(`Ariel`, `Python`))
 
 // #### Stretch Problem
 
-// * Extend the functionality of the Student by adding a prop called grade and setting it equal to a number between 1-100.
+// * Extend the functionality of the Student by adding a prop called grade and setting it equal to a number between 1-100. DONE
 // * Now that our students have a grade build out a method on the Instructor (this will be used by _BOTH_ instructors and PM's) that will randomly add or subtract points to a student's grade. _Math.random_ will help.
 // * Add a graduate method to a student.
 //   * This method, when called, will check the grade of the student and see if they're ready to graduate from Lambda School
