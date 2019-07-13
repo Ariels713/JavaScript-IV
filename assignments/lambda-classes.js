@@ -126,6 +126,28 @@ const elliePerson = new Person({
     faveSubjects: [`Organizing`, `Reading`, `Planning`]
   })
 
+  const elliePM = new ProjectManager({
+    name: `Els Rod`,
+    age: 11,
+    location: `Barcelona Spain`,
+    speciality: `Ukulele`,
+    favLanguage: `Spanish`,
+    catchPhrase: `Yes please`,
+    gradClassName: 'WebPT10',
+    favInstructor: `My Papa`
+  })
+  
+  const laurenPM = new ProjectManager({
+    name: `Laur Chils`,
+    age: 28,
+    location: `New York, NY`,
+    speciality: `Writing`,
+    favLanguage: `Spanglish`,
+    catchPhrase: `What's for dinner`,
+    gradClassName: 'Baruch2010',
+    favInstructor: `Proff`
+  })
+
 
   //Code Test
 console.log(elliePerson.speak())
@@ -138,6 +160,10 @@ console.log(ellieStudent.sprintChallenge(`Python`))
 console.log(laurenStudent.listsSubjects())
 console.log(laurenStudent.PRAassignment('Python'))
 console.log(laurenStudent.sprintChallenge(`Python`))
+console.log(elliePM.standUP(`@careers`))
+console.log(elliePM.debugsCode(`Ellie`, `Python`))
+console.log(laurenPM.standUP(`@partyTime`))
+console.log(laurenPM.debugsCode(`Ariel`, `Python`))
 
 // #### Stretch Problem
 
